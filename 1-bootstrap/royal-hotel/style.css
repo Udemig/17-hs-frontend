@@ -1,0 +1,99 @@
+/* font import */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap");
+
+:root {
+  --gold: #c5a880;
+  --dark: #0f172a;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif !important;
+  background: #f8fafc;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+.font-serif {
+  font-family: "Playfair Display", serif;
+}
+
+.bg-dark-navy {
+  background-color: var(--dark) !important;
+}
+
+.text-gold {
+  color: var(--gold) !important;
+}
+
+.bg-gold {
+  background-color: var(--gold) !important;
+}
+
+/* Butonlar */
+.btn-gold {
+  background: var(--gold);
+  border-color: var(--gold);
+  color: #fff;
+}
+.btn-gold:hover {
+  background: #b39266;
+  border-color: #b39266;
+  color: #fff;
+}
+
+/* Hero - Carousel */
+.carousel-item {
+  position: relative;
+}
+
+.carousel-inner img {
+  height: min(70vh, 620px);
+  min-height: 420px;
+  object-fit: cover;
+}
+
+.hero-caption {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  background: linear-gradient(rgba(15, 23, 42, 0.2), rgba(15, 23, 42, 0.75));
+  padding: 2rem;
+}
+
+/* Bootstrapte paddin 12 yi geçemediği için burda yazıyorum */
+.section-pad {
+  padding-block: 5rem;
+}
+
+.section-pad-sm {
+  padding-block: 2.5rem;
+}
+
+.section-head {
+  margin-bottom: 3rem;
+}
+
+.card-pad {
+  padding: 1.75rem;
+}
+
+/* Bootstrape hover efekti olmadığı için burda yazıyorum */
+.hover-lift {
+  transition: transform 0.25s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-4px);
+}
+
+.room-img {
+  height: 200px;
+  object-fit: cover;
+}

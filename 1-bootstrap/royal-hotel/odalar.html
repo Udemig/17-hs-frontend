@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="tr" data-bs-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grand Royal Hotel | 5 Yıldızlı Lüks Deneyim</title>
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <!-- Bootstrap JS -->
+    <script
+      type="module"
+      src="https://cdn.jsdelivr.net/npm/bootstrap@6.0.0-alpha.1/dist/js/bootstrap.bundle.min.js"
+    ></script>
+
+    <!-- Bootstrap Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Üst Bilgi Çubuğu -->
+    <header class="bg-dark-navy fg-white py-1 small d-none md:d-block">
+      <address class="container d-flex justify-content-between mb-0 fst-normal">
+        <div>
+          <span class="me-3"
+            ><i class="bi bi-geo-alt text-gold"></i> Monaco Sahil Bulvarı No:624</span
+          >
+          <span><i class="bi bi-telephone text-gold"></i> +90 (850) 555 - ROYAL</span>
+        </div>
+        <div>
+          <a href="#" class="fg-white me-2"><i class="bi bi-facebook"></i></a>
+          <a href="#" class="fg-white me-2"><i class="bi bi-instagram"></i></a>
+          <a href="#" class="fg-white me-2"><i class="bi bi-twitter-x"></i></a>
+        </div>
+      </address>
+    </header>
+
+    <!-- Navbar -->
+    <nav class="navbar lg:navbar-expand bg-white sticky-top shadow-sm py-2">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-xl" href="#">
+          <i class="bi bi-gem text-gold fs-2xl me-2"></i>
+          <span class="font-serif">GRAND ROYAL</span>
+        </a>
+        <button
+          class="btn-icon navbar-toggler"
+          type="button"
+          data-bs-toggle="drawer"
+          data-bs-target="#navbarDrawer"
+          aria-controls="navbarDrawer"
+        >
+          <span class="navbar-toggler-icon" aria-hidden="true"></span>
+        </button>
+        <dialog class="drawer drawer-end" tabindex="-1" id="navbarDrawer">
+          <div class="drawer-header">
+            <h5 class="drawer-title" id="navbarDrawerLabel">Menü</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="drawer"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="drawer-body mb-2 md:mb-0">
+            <ul class="nav navbar-nav fw-semibold lg:mx-auto">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="index.html">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active text-gold" href="odalar.html">Odalar</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">Hakkımızda</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#sevices">Hizmetler</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">İletişim</a>
+              </li>
+            </ul>
+            <a href="odalar.html" class="btn btn-gold rounded-pill px-4 btn-sm fw-semibold"
+              >Rezervasyon Yap</a
+            >
+          </div>
+        </dialog>
+      </div>
+    </nav>
+
+    <!-- Ana İçerik -->
+    <main>
+      <!-- Başlık -->
+      <header class="bg-dark-navy fg-white section-pad">
+        <div class="container">
+          <nav class="small mb-2">
+            <a href="index.html" class="text-gold">Anasayfa</a>
+            <span class="opacity-75">/ Odalar</span>
+          </nav>
+          <div class="d-flex justify-content-between align-items-center">
+            <div>
+              <h1 class="text-4xl fw-bold font-serif mb-1">Lüks Odalar & Süitler</h1>
+              <p class="opacity-75 small mb-0">En iyi konfor için tasarlanmış özel süitlerimiz.</p>
+            </div>
+            <span class="badge bg-gold px-3 py-2 rounded-pill d-none md:d-inline">
+              En İyi Fiyat Garantisi
+            </span>
+          </div>
+        </div>
+      </header>
+
+      <!-- Filtre -->
+      <section class="container section-pad-sm">
+        <div class="card border-0 shadow-sm rounded-4 p-5 bg-white">
+          <form class="row g-5 align-items-end">
+            <!-- select -->
+            <div class="md:col-4 sm:col-6">
+              <label class="form-label small fw-semibold">Oda Tipi</label>
+              <select class="form-control">
+                <option selected>Tüm Kategoriler</option>
+                <option>Deluxe Süit</option>
+                <option>Başkanlık Çatı Katı</option>
+                <option>Bahçe Villası</option>
+              </select>
+            </div>
+            <!-- select -->
+            <div class="md:col-3 sm:col-6">
+              <label class="form-label small fw-semibold">Fiyat Aralığı</label>
+              <select class="form-control">
+                <option selected>Tüm Fiyatlar</option>
+                <option>3.000 ₺ - 5.000 ₺</option>
+                <option>5.000 ₺ ve üzeri</option>
+              </select>
+            </div>
+            <!-- select -->
+            <div class="md:col-3 sm:col-6">
+              <label class="form-label small fw-semibold">Misafir</label>
+              <select class="form-control">
+                <option selected>Fark Etmez</option>
+                <option>1 - 2 kİŞİ</option>
+                <option>3+ Kişi (Aile)</option>
+              </select>
+            </div>
+            <!-- Buton -->
+            <div class="md:col-2 sm:col-6">
+              <button class="btn btn-gold w-100 rounded-3">Filtrele</button>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer id="contact" class="bg-black fg-white px-5 py-10">
+      <div class="container">
+        <div class="row g-4">
+          <!-- Logo -->
+          <div class="md:col-4">
+            <h5><i class="bi bi-gem text-gold me-2"></i>GRAND ROYAL</h5>
+            <p class="fg-secondary small mb-0">Akdeniz kıyısında 5 yıldızlı lüks konaklama.</p>
+          </div>
+
+          <!-- Linkler -->
+          <nav class="md:col-4">
+            <h6 class="mb-2">Hızlı Linkler</h6>
+            <ul class="list-unstyled small mb-0">
+              <li><a href="index.html" class="fg-secondary">Ana Sayfa</a></li>
+              <li><a href="odalar.html" class="fg-secondary">Odalar</a></li>
+              <li><a href="#about" class="fg-secondary">Hakkımızda</a></li>
+            </ul>
+          </nav>
+
+          <!-- Adres -->
+          <address class="md:col-4">
+            <h6>İletişim</h6>
+            <p class="fg-secondary small mb-0">
+              <i class="bi bi-telephone text-gold me-2"></i>+ 90 (850) 555-ROYAL
+            </p>
+            <p class="fg-secondary small mb-0">
+              <i class="bi bi-envelope text-gold me-2"></i>rezervasyon@grandroyalhotel.com
+            </p>
+          </address>
+        </div>
+        <hr />
+        <div class="text-center small fg-secondary">&copy; 2026 Grand Royal Luxury Hotel.</div>
+      </div>
+    </footer>
+  </body>
+</html>
